@@ -1,0 +1,40 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <title>limit.text.js</title>
+	<meta charset="utf-8" />
+	<meta name="viewport" content="width=device-width" />
+	<style>
+		body { padding:10px; font-family:Helvetica, sans-serif; }
+		h1 { margin:0 0 40px; }
+		h2 { color:#111; font-size:22px; }
+		p { color:#222; font-size:14px; }
+		p + h2 { margin-top:40px; }
+		code { color:#333; }
+		code span { display:block; text-indent:30px; }
+	</style>
+	<script src="http://code.jquery.com/jquery-latest.min.js"></script>
+	<script src="../limit.text.min.js"></script>
+	<script>
+		$(function () {
+			$('#example-1').limitText();
+			$('#example-2').limitText({ length:65, ellipsisText: '[...]'}).css('color', '#800000');
+		});
+	</script>
+</head>
+<body>
+	<h1>limit-text</h1>
+	<h2>Example 1: Default usage</h2>
+	<code>$('p').limitText(); <em>// (100 characters and an "..." ellipis)</em></code>
+	<h3>Before</h3>
+	<p>Regulators are pouncing on banks with increasing ferocity. The question is whether the tightened grip is sometimes too extreme and, if so, how much latitude bankers have to get relief in those cases.</p>
+	<h3>After</h3>
+	<p id="example-1">Regulators are pouncing on banks with increasing ferocity. The question is whether the tightened grip is sometimes too extreme and, if so, how much latitude bankers have to get relief in those cases.</p>
+	<h2>Example 2: Length and Ellipsis customized</h2>
+	<code>$('p').limitText({<span>length: 65,</span><span>ellipsisText: '[...]'</span>})<br />.css('color', '#800000');</code>
+	<h3>Before</h3>
+	<p>Despite its mercurial nature, however, the house cat is the most popular pet in the world.</p>
+	<h3>After</h3>
+	<p id="example-2">Despite its mercurial nature, however, the house cat is the most popular pet in the world.</p>
+</body>
+</html>
