@@ -5,7 +5,7 @@
   @version 1.0
   @date 02/09/2014
   @category jQuery plugin
-  @copyright (c) 2014 (www.mikepetruniak.com)
+  @copyright (c) 2014
   @license Licensed under the MIT (http://www.opensource.org/licenses/mit-license.php) license.
 */
 
