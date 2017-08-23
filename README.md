@@ -1,4 +1,4 @@
-# limit-text
+# Limit Text jQuery Plugin
 This jQuery plugin will truncate text to a specified number of characters without splitting a word in half.
 
 ### Example one:
